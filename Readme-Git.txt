@@ -1,0 +1,3 @@
+git checkout doker_main
+git checkout docker_mvndev1
+git checkout docker_mvndev1
