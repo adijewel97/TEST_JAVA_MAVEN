@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  java_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8080"
+    volumes:
+      - ./app:/app
+    environment:
+      - JAVA_HOME=/usr/local/openjdk-17
+      - MAVEN_HOME=/usr/share/maven
+      - CATALINA_HOME=/usr/local/tomcat
+    container_name: java_tomcat_container
